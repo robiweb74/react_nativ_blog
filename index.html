@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>React Native Tools 2025</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">Loading...</div>
+
+  <script>
+    fetch('react_nativ_tools_2025.md')
+      .then(response => response.text())
+      .then(markdownText => {
+        document.getElementById('content').innerHTML = marked.parse(markdownText);
+      });
+  </script>
+</body>
+</html>
